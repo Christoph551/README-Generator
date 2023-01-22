@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require ('inquirer');
 
-const generateMarkdown = require ('./utils/generateMarkdown')
+const fs = require ('fs');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -59,10 +59,51 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    let license = '';
+    switch (data.license) {
+        case 'Apache':
+            license='[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
+            break;
+        case 'GNU':
+            license='[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)'
+            break;
+        case 'MIT':
+            license='[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
+        default:
+            break;
+    }
+        const contents = `
+            # ${data.title}
+            ${license}
+            ## Description\n${data.description}
+            ## Table of contents
+                - [Installation](#Insallation)
+                - [Usage](#Usage)
+                - [Contribution](#Contributing)
+                - [Test](#Test)
+                - [Questions](#Questions)
+            ## Installation\n${data.installation}
+            ## Usage\n${data.usage}
+            ## Contributing\n${data.contributing}
+            ## Test\n${data.test}
+            ## Questions
+            GitHub Username: [${data.github}](https://github.com/${data.github})\n
+            Email Address: [${data.email}](${data.email})`;
+    fs.writeFileSync(fileName, contents)
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer
+        .prompt(questions)
+        .then(answers => {writeToFile('readme.md', answers)}) 
+        .catch(error => {
+            if(error){
+                throw error
+            }
+        })
+}
 
 // Function call to initialize app
 init();
