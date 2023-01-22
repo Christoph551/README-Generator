@@ -46,6 +46,11 @@ const questions = [
         message: 'Please enter the collaborators on this project.',
         name: 'collaborators'
     },
+    {   //npm run test
+        type: 'input',
+        message: 'Enter the test script',
+        name: 'test'
+    },
     {
         type: 'input',
         message: 'What is your GitHub user name?',
@@ -83,13 +88,13 @@ ${license}
 - [Contribution](#Contributing)\n
 - [Test](#Test)\n
 - [Questions](#Questions)\n
-## Installation\n${data.installation}\n
-## Usage\n${data.usage}
-## Contributing\n${data.contributing}\n
+## Installation\n${data.userInstall}\n
+## Usage\n${data.userInstructions}\n
+## Contributing\n${data.collaborators}\n
 ## Test\n${data.test}\n
 ## Questions\n
-GitHub Username: [${data.github}](https://github.com/${data.github})\n
-Email Address: [${data.email}](${data.email})`;
+GitHub Username: [${data.userName}](https://github.com/${data.userName})\n
+Email Address: [${data.userEmail}](${data.userEmail})`;
 fs.writeFileSync(fileName, contents)
 }
 
