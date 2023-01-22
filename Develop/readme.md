@@ -2,7 +2,7 @@
             # README-Generator
             
             ## Description
-This is a project to use node.js in order to generate a README file in a desired structure within the command line.
+A project to use node.js to generate a professional README through the command line
             ## Table of contents
                 - [Installation](#Insallation)
                 - [Usage](#Usage)

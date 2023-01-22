@@ -74,23 +74,23 @@ function writeToFile(fileName, data) {
             break;
     }
         const contents = `
-            # ${data.title}
-            ${license}
-            ## Description\n${data.description}
-            ## Table of contents
-                - [Installation](#Insallation)
-                - [Usage](#Usage)
-                - [Contribution](#Contributing)
-                - [Test](#Test)
-                - [Questions](#Questions)
-            ## Installation\n${data.installation}
-            ## Usage\n${data.usage}
-            ## Contributing\n${data.contributing}
-            ## Test\n${data.test}
-            ## Questions
-            GitHub Username: [${data.github}](https://github.com/${data.github})\n
-            Email Address: [${data.email}](${data.email})`;
-    fs.writeFileSync(fileName, contents)
+# ${data.title}
+${license}
+## Description\n${data.description}
+## Table of contents
+- [Installation](#Insallation)
+- [Usage](#Usage)
+- [Contribution](#Contributing)
+- [Test](#Test)
+- [Questions](#Questions)
+## Installation\n${data.installation}
+## Usage\n${data.usage}
+## Contributing\n${data.contributing}
+## Test\n${data.test}
+## Questions
+GitHub Username: [${data.github}](https://github.com/${data.github})\n
+Email Address: [${data.email}](${data.email})`;
+fs.writeFileSync(fileName, contents)
 }
 
 // TODO: Create a function to initialize app
