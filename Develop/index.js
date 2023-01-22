@@ -76,18 +76,18 @@ function writeToFile(fileName, data) {
         const contents = `
 # ${data.title}
 ${license}
-## Description\n${data.description}
-## Table of contents
-- [Installation](#Insallation)
-- [Usage](#Usage)
-- [Contribution](#Contributing)
-- [Test](#Test)
-- [Questions](#Questions)
-## Installation\n${data.installation}
+## Description\n${data.description}\n
+## Table of contents\n
+- [Installation](#Insallation)\n
+- [Usage](#Usage)\n
+- [Contribution](#Contributing)\n
+- [Test](#Test)\n
+- [Questions](#Questions)\n
+## Installation\n${data.installation}\n
 ## Usage\n${data.usage}
-## Contributing\n${data.contributing}
-## Test\n${data.test}
-## Questions
+## Contributing\n${data.contributing}\n
+## Test\n${data.test}\n
+## Questions\n
 GitHub Username: [${data.github}](https://github.com/${data.github})\n
 Email Address: [${data.email}](${data.email})`;
 fs.writeFileSync(fileName, contents)
@@ -97,7 +97,7 @@ fs.writeFileSync(fileName, contents)
 function init() {
     inquirer
         .prompt(questions)
-        .then(answers => {writeToFile('readme.md', answers)}) 
+        .then(answers => {writeToFile('README.md', answers)}) 
         .catch(error => {
             if(error){
                 throw error
