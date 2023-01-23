@@ -1,5 +1,5 @@
 # README-Generator
-  [![License: GPL v3](https://img.shields.io/badge/License/GPLv3-blue.svg](https://www.gnu.org/licenses/gpl-3.0)
+  [![License: GPL v3](https://img.shields.io/badge/License/GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ## Description
 This is a project to utilize node.js to create an application within the command line interface in order to generate a high quality README.md file.
 
