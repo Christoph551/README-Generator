@@ -1,8 +1,8 @@
 
-# README-Generator
-
+# Readme-Generator
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Description
-This is a project to use node.js and the command line to answer a series of questions in order to generate a high quality README.me file. 
+Testing...
 
 ## Table of contents
 
@@ -17,19 +17,16 @@ This is a project to use node.js and the command line to answer a series of ques
 - [Questions](#Questions)
 
 ## Installation
-This uses the inquirer npm package. To install, simply navigate to the directory of the project you are working in and type `npm i inquirer@8.2.4` to install the npm package. 
+Testing
 
 ## Usage
-To begin answering questions, navigate to the directory of your project in the command line and type `node index`. This will begin with the first question and capture the user's input. Progress through each of the questions until completed. Once finished, then a README.md file will be generated with all of the user's input. 
-
-Please refer to the following link to review a video of how to use this application:
-[README Generator Video](https://drive.google.com/file/d/1voq_mCN-6oTJyt7V1lvYLQOQat_hTeqy/view?usp=share_link)
+Testing
 
 ## Contributing
-Chris Simmonds
+Chris
 
 ## Test
-npm run test
+Testing
 
 ## Questions
 
