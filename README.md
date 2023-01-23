@@ -22,6 +22,9 @@ This uses the inquirer npm package. To install, simply navigate to the directory
 ## Usage
 To begin answering questions, navigate to the directory of your project in the command line and type `node index`. This will begin with the first question and capture the user's input. Progress through each of the questions until completed. Once finished, then a README.md file will be generated with all of the user's input. 
 
+Please refer to the following link to review a video of how to use this application:
+[README Generator Video](https://drive.google.com/file/d/1voq_mCN-6oTJyt7V1lvYLQOQat_hTeqy/view?usp=share_link)
+
 ## Contributing
 Chris Simmonds
 

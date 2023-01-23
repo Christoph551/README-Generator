@@ -24,7 +24,7 @@ const questions = [
             'None'
         ],
         message: 'Please select which of the following licenses you would like to use.',
-        name: 'installation'
+        name: 'license'
     },
     {
         type: 'input',
