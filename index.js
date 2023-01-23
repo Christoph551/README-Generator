@@ -3,6 +3,8 @@ const inquirer = require ('inquirer');
 
 const fs = require ('fs');
 
+const generateMarkdown = require ('./utils/generateMarkdown')
+
 // TODO: Create an array of questions for user input
 const questions = [
     { // Title Question
@@ -65,36 +67,8 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    let license = '';
-    switch (data.license) {
-        case 'Apache':
-            license=`[![License](https://img.shields.io/badge/License/${data.userName}/${data.title})](https://opensource.org/licenses/Apache-2.0)`
-            break;
-        case 'GNU':
-            license=`[![License: GPL v3](https://img.shields.io/badge/License/${data.userName}/${data.title}](https://www.gnu.org/licenses/gpl-3.0)`
-            break;
-        case 'MIT':
-            license=`[![License: MIT](https://img.shields.io/badge/License/${data.userName}/${data.title})](https://opensource.org/licenses/MIT)`
-        default:
-            break;
-    }
-        const contents = `
-# ${data.title}
-${license}
-## Description\n${data.description}\n
-## Table of contents\n
-- [Installation](#Insallation)\n
-- [Usage](#Usage)\n
-- [Contribution](#Contributing)\n
-- [Test](#Test)\n
-- [Questions](#Questions)\n
-## Installation\n${data.userInstall}\n
-## Usage\n${data.userInstructions}\n
-## Contributing\n${data.collaborators}\n
-## Test\n${data.test}\n
-## Questions\n
-GitHub Username: [${data.userName}](https://github.com/${data.userName})\n
-Email Address: [${data.userEmail}](${data.userEmail})`;
+        const contents = generateMarkdown(data);
+        
 fs.writeFileSync(fileName, contents)
 }
 

@@ -1,8 +1,7 @@
-
 # README-Generator
-
+  [![License](https://img.shields.io/badge/License/Christoph551/README-Generator)](https://opensource.org/licenses/Apache-2.0)
 ## Description
-This is a project to generate a high quality README.md file using node.js. 
+This is a project to utilize node.js to create an application within the command line interface in order to generate a high quality README.md file. 
 
 ## Table of contents
 
@@ -17,16 +16,16 @@ This is a project to generate a high quality README.md file using node.js.
 - [Questions](#Questions)
 
 ## Installation
-This uses the inquirer npm package. To install the package, navigate to the directory of your project and open the command line. Then type `npm i inquirer@8.2.4` to install the package. 
+To install, simply navigate to the directory of the project you are working in using the command line. Then type `npm i inquirer@8.2.4` to install the npm package.
 
 ## Usage
-Test
+To begin, open up the command line and change to the desired directory of a project you would like to generate a README.md file for. Once you have verified that you are in the correct directory, simply type `node index` to run the application. From there, begin by answering each of the questions.The application will take the user's input and generate a README.md file with all of the user's input as soon as the final question has been answered.
 
 ## Contributing
-Chris
+Chris Simmonds
 
 ## Test
-Test
+npm run test
 
 ## Questions
 
