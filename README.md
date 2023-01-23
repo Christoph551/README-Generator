@@ -1,8 +1,8 @@
 
-# Readme-Generator
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# README-Generator
+
 ## Description
-Testing...
+This is a project to generate a high quality README.md file using node.js. 
 
 ## Table of contents
 
@@ -17,16 +17,16 @@ Testing...
 - [Questions](#Questions)
 
 ## Installation
-Testing
+This uses the inquirer npm package. To install the package, navigate to the directory of your project and open the command line. Then type `npm i inquirer@8.2.4` to install the package. 
 
 ## Usage
-Testing
+Test
 
 ## Contributing
 Chris
 
 ## Test
-Testing
+Test
 
 ## Questions
 
