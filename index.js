@@ -20,9 +20,9 @@ const questions = [
     {
         type: 'list',
         choices: [
-            'MIT',
-            'GNU GPLv3',
-            'Apache License 2.0',
+            'MIT-yellow.svg',
+            'GPLv3-blue.svg',
+            'Apache_2.0-blue.svg',
             'None'
         ],
         message: 'Please select which of the following licenses you would like to use.',

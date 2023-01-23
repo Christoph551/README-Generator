@@ -3,16 +3,16 @@
 function renderLicenseBadge(data) {
   let license = '';
   switch (data.license) {
-    case 'Apache License 2.0':
-        license=`[![License](https://img.shields.io/badge/License/${data.userName}/${data.title})](https://opensource.org/licenses/Apache-2.0)`
+    case 'Apache_2.0-blue.svg':
+        license=`[![License](https://img.shields.io/badge/License/${data.license})](https://opensource.org/licenses/Apache-2.0)`
         break;
-    case 'GNU GPLv3':
-        license=`[![License: GPL v3](https://img.shields.io/badge/License/${data.userName}/${data.title}](https://www.gnu.org/licenses/gpl-3.0)`
-        break;
-    case 'MIT':
-        license=`[![License: MIT](https://img.shields.io/badge/License/${data.userName}/${data.title})](https://opensource.org/licenses/MIT)`
-    default:
-        break;
+    case 'GPLv3-blue.svg':
+      license=`[![License: GPL v3](https://img.shields.io/badge/License/${data.license}](https://www.gnu.org/licenses/gpl-3.0)`
+      break;
+      case 'MIT-yellow.svg':
+        license=`[![License: MIT](https://img.shields.io/badge/License/${data.license})](https://opensource.org/licenses/MIT)`
+        default:
+          break;
   }
   return license;
 }
@@ -29,6 +29,7 @@ function generateMarkdown(data) {
 - [Test](#Test)\n
 - [Questions](#Questions)\n
 ## Installation\n${data.userInstall}\n
+## Deployment\n${data.userURL}\n
 ## Usage\n${data.userInstructions}\n
 ## Contributing\n${data.collaborators}\n
 ## Test\n${data.test}\n
