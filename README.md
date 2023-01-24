@@ -33,5 +33,5 @@ npm run test
 
 Have questions? Please feel free to reach out to me at:
 
-GitHub Username: [Christoph551](https://github.com/Christoph551)
+GitHub Profile: [Christoph551](https://github.com/Christoph551)
 Email: [christophersimmonds551@gmail.com](mailto:christophersimmonds551@gmail.com)
