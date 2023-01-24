@@ -21,6 +21,8 @@ https://github.com/Christoph551/README-Generator
 ## Usage
 To begin, open up the command line and change to the desired directory of a project you would like to generate a README.md file for. Once you have verified that you are in the correct directory, simply type `node index` to run the application. From there, begin by answering each of the questions.The application will take the user's input and generate a README.md file with all of the user's input as soon as the final question has been answered.
 
+I recorded a video of myself answering each of these questions to demonstrate how the application functions. A link to that video can be found [Here](https://drive.google.com/file/d/1kSSxVqbywqSC9ENbQJpClpdFJgX-GyOH/view?usp=share_link)
+
 ## Contributing
 Chris Simmonds
 
@@ -31,5 +33,5 @@ npm run test
 
 Have questions? Please feel free to reach out to me at:
 
-GitHub Username: [Christoph551](https://github.com/Christoph551)
-Email: [Email](mailto:christophersimmonds551@gmail.com)
+GitHub Profile: [Christoph551](https://github.com/Christoph551)
+Email: [christophersimmonds551@gmail.com](mailto:christophersimmonds551@gmail.com)

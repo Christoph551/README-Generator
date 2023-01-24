@@ -36,7 +36,7 @@ function generateMarkdown(data) {
 ## Test\n${data.test}
 ## Questions\n
 Have questions? Please feel free to reach out to me at:\n
-GitHub Username: [${data.userName}](https://github.com/${data.userName})
+GitHub Username: [${data.userName}](https://github.com/${data.userName})\n
 Email: [Email](mailto:${data.userEmail})`;
 }
 
