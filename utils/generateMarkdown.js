@@ -11,8 +11,8 @@ function renderLicenseBadge(data) {
       break;
       case 'MIT-yellow.svg':
         license=`[![License: MIT](https://img.shields.io/badge/License/${data.license})](https://opensource.org/licenses/MIT)`
+        break;
         default:
-          break;
   }
   return license;
 }
@@ -21,21 +21,23 @@ function renderLicenseBadge(data) {
 function generateMarkdown(data) {
   return `# ${data.title}
   ${renderLicenseBadge(data)}
-## Description\n${data.description}\n
-## Table of contents\n
-- [Installation](#Insallation)\n
-- [Usage](#Usage)\n
-- [Contribution](#Contributing)\n
-- [Test](#Test)\n
-- [Questions](#Questions)\n
-## Installation\n${data.userInstall}\n
-## Deployment\n${data.userURL}\n
-## Usage\n${data.userInstructions}\n
-## Contributing\n${data.collaborators}\n
-## Test\n${data.test}\n
+## Description\n${data.description}
+## Table of contents
+- [Installation](#Insallation)
+- [Deployment](#Deployment)
+- [Usage](#Usage)
+- [Contribution](#Contributing)
+- [Test](#Test)
+- [Questions](#Questions)
+## Installation\n${data.userInstall}
+## Deployment\n${data.userURL}
+## Usage\n${data.userInstructions}
+## Contributing\n${data.collaborators}
+## Test\n${data.test}
 ## Questions\n
-GitHub Username: [${data.userName}](https://github.com/${data.userName})\n
-Email Address: [${data.userEmail}](${data.userEmail})`;
+Have questions? Please feel free to reach out to me at:\n
+GitHub Username: [${data.userName}](https://github.com/${data.userName})
+Email: [Email](mailto:${data.userEmail})`;
 }
 
 
