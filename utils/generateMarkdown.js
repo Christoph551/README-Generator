@@ -3,14 +3,14 @@
 function renderLicenseBadge(data) {
   let license = '';
   switch (data.license) {
-    case 'Apache_2.0-blue.svg':
-        license=`[![License](https://img.shields.io/badge/License/${data.license})](https://opensource.org/licenses/Apache-2.0)`
+    case 'Apache_2.0':
+        license=`[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
         break;
-    case 'GPLv3-blue.svg':
-      license=`[![License: GPL v3](https://img.shields.io/badge/License/${data.license})](https://www.gnu.org/licenses/gpl-3.0)`
+    case 'GPLv3':
+      license=`[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`
       break;
-      case 'MIT-yellow.svg':
-        license=`[![License: MIT](https://img.shields.io/badge/License/${data.license})](https://opensource.org/licenses/MIT)`
+      case 'MIT':
+        license=`[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
         break;
         default:
   }
