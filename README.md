@@ -1,10 +1,10 @@
-# Express-Note-Taker
+# README-Generator
 
-  [![License: GPL v3](https://img.shields.io/badge/License/GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Description
 
-This is a project to run a server in order to add/delete notes using express.js. 
+This is a project to utilize node.js to create an application within the command line interface in order to generate a high quality README.md file.
 
 ## Table of contents
 
@@ -17,23 +17,23 @@ This is a project to run a server in order to add/delete notes using express.js.
 
 ## Installation
 
-To use this program, start by cloning this repository. From there, navigate to the directory of your project in the command line and type `npm i`. This should download the required npm packages to run the express server.
+To install, simply navigate to the directory of the project you are working in using the command line. Then type `npm i inquirer@8.2.4` to install the npm package.
 
 ## Deployment
 
-N/A
+https://github.com/Christoph551/README-Generator
 
 ## Usage
 
-After you have installed the required npm packages, you'll want to type `node server` in order to initialize the local server (PORT 3001). From there, open up the browser to `http://localhost:3001`. This should display the home page to where you can click on the "Get Started" button. Simply type in a title for your note along with some text and you'll be able to save by clicking the save icon at the top right of the screen. Additionally, if you would like to delete a previous note, simply click on the red trash can icon to delete.
+To begin, open up the command line and change to the desired directory of a project you would like to generate a README.md file for. Once you have verified that you are in the correct directory, simply type `node index` to run the application. From there, begin by answering each of the questions.The application will take the user's input and generate a README.md file with all of the user's input as soon as the final question has been answered.
 
 ## Contributing
 
-Joshua Minor, Anthony Frederick, Adam Hovda
+[Rachel Thiim](https://github.com/rxtATX) provided source code for unit tests.
 
 ## Test
 
-This project did not utilize unit tests.
+npm run test
 
 ## Questions
 
